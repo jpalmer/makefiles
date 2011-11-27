@@ -1,0 +1,9 @@
+FILE=app
+fast: ${FILE}.tex   
+	pdflatex ${FILE} 
+
+all: ${FILE}.pdf 
+
+${FILE}.pdf: ${FILE}.tex 
+	./comp.sh ${FILE}.tex
+

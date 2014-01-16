@@ -1,8 +1,8 @@
 FILE=Something
 MONO=/suphys/jpal8929/bin/mono
-FSC=/suphys/jpal8929/FSharp-2.0.0.0/bin/fsc.exe
-FSI=/suphys/jpal8929/FSharp-2.0.0.0/bin/fsi.exe
-COMPILER=${MONO} ${FSC}
+FSC=fsharpc
+FSI=fsharpi
+COMPILER=${FSC}
 MONOOPTS= --optimize=all
 FSHARPOPTS=--optimize+ --nologo --checked-
 
